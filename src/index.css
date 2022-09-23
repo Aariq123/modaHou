@@ -50,6 +50,7 @@ nav{
 .links a{
   text-decoration: none;
   color: rgb(9, 92, 9);
+  box-sizing: border-box;
 }
 
 .nav-ul div{
@@ -868,6 +869,18 @@ footer .flex, footer .footer2, .footer1, .footer2 div{
     flex-direction: column;
   }
 
+  .hero-text{
+   margin: 0 15px 0 10px;
+  }
+
+  .hero-text span{
+    font-size: 40px;
+  }
+
+  .hero-text p{
+    font-size:23px ;
+  }
+
   .hero-review > div:nth-child(3) .review-text{
     order: 2;
   }
@@ -875,10 +888,13 @@ footer .flex, footer .footer2, .footer1, .footer2 div{
   .hero-review > div:nth-child(3)  img{
     order: 1;
   }
-
-
+  
   .container{
     width: 100%;
+  }
+
+  .why-us{
+    margin: 350px 0px 0 0px;
   }
 
   .menu .container{
@@ -886,6 +902,12 @@ footer .flex, footer .footer2, .footer1, .footer2 div{
   }
 
   .flex{
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .instructions{
+    margin: 30px 8px;
   }
 }
