@@ -30,7 +30,7 @@ function App() {
       <BrowserRouter>
       <Navbar></Navbar>
         <Routes>
-          <Route path='http://Aariq123.github.io/modaHou/' element={<Hero></Hero>}></Route>
+          <Route path='/modaHou/' element={<Hero></Hero>}></Route>
           <Route path='/menu' element={<Menu></Menu>}></Route>
           <Route path='/plans' element={<Plans></Plans>}></Route>
           <Route path='/start' element={<Start></Start>}></Route>
