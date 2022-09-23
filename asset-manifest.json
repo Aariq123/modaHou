@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/modaHou/static/css/main.703135a5.css",
+    "main.js": "/modaHou/static/js/main.92a32364.js",
+    "static/media/hero.jpg": "/modaHou/static/media/hero.d39d51a8196a1d76dd88.jpg",
+    "static/media/hero2.jpg": "/modaHou/static/media/hero2.a9e5280ee820e93d87ad.jpg",
+    "static/media/plan3.jpg": "/modaHou/static/media/plan3.1f874f2795ad0f4669e7.jpg",
+    "static/media/plan4.jpg": "/modaHou/static/media/plan4.832518a05c2cadc53571.jpg",
+    "static/media/plan1.jpg": "/modaHou/static/media/plan1.5b016f1b2f8f14a08d14.jpg",
+    "static/media/hehe.jpg": "/modaHou/static/media/hehe.db006e37210cef6a860e.jpg",
+    "static/media/start3.jpg": "/modaHou/static/media/start3.02c8f1cce8a4d6ebc7bb.jpg",
+    "static/media/start1.jpg": "/modaHou/static/media/start1.a394a1ce42e87aa26530.jpg",
+    "static/media/plan2.jpg": "/modaHou/static/media/plan2.30c15e9b240526e12e4f.jpg",
+    "static/media/start2.jpg": "/modaHou/static/media/start2.b0b134bf880169d84b23.jpg",
+    "static/media/ligma2.jpg": "/modaHou/static/media/ligma2.f6133c23c2449dbb3129.jpg",
+    "static/media/hehe1.jpg": "/modaHou/static/media/hehe1.5dd4de8fc56899fe0a4e.jpg",
+    "static/media/hehe2.jpg": "/modaHou/static/media/hehe2.4101c5cf2c465322e30a.jpg",
+    "index.html": "/modaHou/index.html",
+    "main.703135a5.css.map": "/modaHou/static/css/main.703135a5.css.map",
+    "main.92a32364.js.map": "/modaHou/static/js/main.92a32364.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.703135a5.css",
+    "static/js/main.92a32364.js"
+  ]
+}
