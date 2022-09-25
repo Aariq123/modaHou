@@ -62,7 +62,7 @@ nav{
 .login-btn{
   font-size: 19px;
   color: white;
-  background-color: rgb(12, 122, 12); ;
+  background-color: rgb(12, 122, 12); 
   padding: 3px 10px;
   border: none;
   border-radius: 10px;
@@ -79,6 +79,90 @@ nav{
   font-size: 27px;
   display: none;
 }
+
+
+
+
+/*//////// plans ////////*/
+
+.customize{
+  margin-top: 50px;
+}
+
+.plans > p{
+  line-height: 25px;
+  margin: 6px;
+  font-size: 18px;
+}
+
+.customize > div{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.plans{
+  background-color: white;
+  padding: 30px;
+}
+
+.none{
+  display: none;
+}
+
+.diet-container{
+  width: 160px;
+  border: 1px solid black;
+}
+
+.select-div{
+  width: 150px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  text-transform: capitalize;
+}
+
+.diet, .intolerance{
+  padding: 5px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.diet:hover, .intolerance:hover{
+  background-color: rgb(13, 156, 13);
+  color: white;
+}
+
+.plans p > .hero-btn{
+  cursor:default;
+  transform: scale(.9);
+}
+
+.customize .hero-btn:hover{
+  transform: scale(.98);
+}
+
+.plans .hero-btn{
+  font-size: 17px;
+  padding: 3px 5px;
+  border-radius: 0;
+}
+
+.num-input{
+  margin: 20px 10px;
+}
+
+.num-input input{
+  padding: 3px;
+  font-size: 18px;
+  width: 70px;
+}
+
+.num-input div{
+  margin-top: 10px;
+}
+
 
 /* ///// Hero ?///////  */
 
@@ -860,6 +944,15 @@ footer .flex, footer .footer2, .footer1, .footer2 div{
 
   .footer2 > div:nth-child(1){
     width: 90%;
+  }
+
+  .plans > p{
+    font-size: 17px;
+  }
+
+  .customize > div{
+    flex-direction: column;
+    align-items: center;
   }
 }
 
