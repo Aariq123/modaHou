@@ -30,12 +30,12 @@ function App() {
       <BrowserRouter>
       <Navbar></Navbar>
         <Routes>
-          <Route path='/modaHou/' element={<Hero></Hero>}></Route>
-          <Route path='/menu/' element={<Menu></Menu>}></Route>
-          <Route path='modaHou/plans/' element={<Plans></Plans>}></Route>
-          <Route path='/start/' element={<Start></Start>}></Route>
-          <Route path='/recipe-info/' element={<RecipeInfo></RecipeInfo>}></Route>
-          <Route path='/all-results/' element={<AllResults></AllResults>}></Route>
+          <Route path='/modaHou' element={<Hero></Hero>}></Route>
+          <Route path='/menu' element={<Menu></Menu>}></Route>
+          <Route path='/modaHou/plans' element={<Plans></Plans>}></Route>
+          <Route path='/start' element={<Start></Start>}></Route>
+          <Route path='/recipe-info' element={<RecipeInfo></RecipeInfo>}></Route>
+          <Route path='/all-results' element={<AllResults></AllResults>}></Route>
         </Routes>
         <Footer></Footer>
       </BrowserRouter>
