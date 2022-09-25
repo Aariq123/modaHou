@@ -7,7 +7,7 @@ const Hero = () => {
             <div className="hero-text">
                 <span>Khao Ar Moda Hou</span>
                 <p>Freshly cooked meals at your doorstep</p>
-                <Link to='/start'><button className='hero-btn'>START HERE</button></Link>
+                <Link to='/start/'><button className='hero-btn'>START HERE</button></Link>
             </div>
 
             <div className="why-us">
