@@ -16,7 +16,7 @@ const Navbar = () => {
             <ul className={navOpen ? 'nav-ul open' : 'nav-ul'}>
                 <div className="links">
                     <li><Link to='/modaHou/'>Home</Link></li>
-                    <li><Link to='/plans/'>Our Plans</Link></li>
+                    <li><Link to='modaHou/plans/'>Our Plans</Link></li>
                     <li><Link to='/menu/'>Menus</Link></li>
                 </div>
                 <div>
