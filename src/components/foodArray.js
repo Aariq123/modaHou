@@ -12,7 +12,7 @@ const FoodArray = ({displayArray}) => {
            
             return(
                     <div className="menu-div" key={id}>
-                        <Link to='/recipe-info' state={{id:id}}>
+                        <Link to='/recipe-info' state={{id:id, ligma:true}}>
                             <div className="img-div">
                                 <img src={image} alt="" />
                             </div>

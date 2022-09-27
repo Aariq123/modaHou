@@ -150,7 +150,7 @@ const Menu = () => {
                         {displaySearchArray &&  displaySearchArray.map(food=>{
                             return(
                                 <div className="result" key={food.id}>
-                                    <Link to='/recipe-info' state={{id:food.id}}>
+                                    <Link to='/recipe-info' state={{id:food.id, ligma:true}}>
                                         <img src={`https://spoonacular.com/recipeImages/${food.id}-90x90.${food.imageType}`} alt="" />
                                         <p className="bold">{food.title}</p>
                                     </Link>

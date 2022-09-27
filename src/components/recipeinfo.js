@@ -8,7 +8,7 @@ import { Context } from '../context/context'
 const RecipeInfo = () => {
     const { key1, key2,  addToFavourites } = useContext(Context)
     const location = useLocation()
-    const { id } = location.state
+    const { id, ligma } = location.state
     const [ description, setDescription ] = useState()
     const desRef = useRef(null)
    let instructionArray = []
@@ -55,7 +55,7 @@ const RecipeInfo = () => {
                 <div className="description-heading">
                     <div className="add">
                         <h1>{description.title}</h1>
-                        <button onClick={()=>addToFavourites({id:description.id, image:description.image, title:description.title})} className="login-btn">Add to favourites</button>
+                        {ligma && <button onClick={()=>addToFavourites({id:description.id, image:description.image, title:description.title})} className="login-btn">Add to favourites</button>}
                     </div>
                     <div className="descrip">
                         <div className='summary-div'>

@@ -24,7 +24,7 @@ const Favourites = () => {
                             </div>
                         </Link>
                             <div className="menu-div-heading">
-                            <Link to='/recipe-info' state={{id:id}}>
+                            <Link to='/recipe-info' state={{id:id, ligma:false}}>
                                 <span className="menu-div-title">{title}</span>
                             </Link>
                                 <button onClick={()=>deleteFavourites(id)} className="login-btn">Delete</button>
