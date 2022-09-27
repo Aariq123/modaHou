@@ -6,7 +6,7 @@ import { useLocation } from 'react-router-dom'
 import { Context } from '../context/context'
 
 const RecipeInfo = () => {
-    const { key1 } = useContext(Context)
+    const { key1, key2,  addToFavourites } = useContext(Context)
     const location = useLocation()
     const { id } = location.state
     const [ description, setDescription ] = useState()
@@ -16,7 +16,7 @@ const RecipeInfo = () => {
 
     useEffect(()=>{
         const getRecipes = async () => {
-            const ligma = await fetch(`https://api.spoonacular.com/recipes/${id}/information?includeNutrition=true&apiKey=${key1}`)
+            const ligma = await fetch(`https://api.spoonacular.com/recipes/${id}/information?includeNutrition=true&apiKey=${key2}`)
             const data = await ligma.json()
             console.log(data)
             setDescription(data)
@@ -55,7 +55,7 @@ const RecipeInfo = () => {
                 <div className="description-heading">
                     <div className="add">
                         <h1>{description.title}</h1>
-                        <button className="login-btn">Add to cart</button>
+                        <button onClick={()=>addToFavourites({id:description.id, image:description.image, title:description.title})} className="login-btn">Add to favourites</button>
                     </div>
                     <div className="descrip">
                         <div className='summary-div'>

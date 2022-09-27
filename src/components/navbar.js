@@ -1,12 +1,15 @@
+import { useState } from 'react';
 import { useContext } from 'react';
 import { Link } from 'react-router-dom'
 import { Context } from '../context/context';
 
 
 
+
 const Navbar = () => {
 
-    const { openNav, navOpen } = useContext(Context)
+    const { openNav, navOpen, favourites } = useContext(Context)
+
 
     return ( 
         <nav>
@@ -20,7 +23,7 @@ const Navbar = () => {
                     <li><Link to='/menu'>Menus</Link></li>
                 </div>
                 <div>
-                    <button className="login-btn"><i className="fa-solid fa-cart-shopping"></i></button>
+                   <Link to='/favourites'><button className="login-btn"><i className="fa-solid fa-crown"></i> <div>{favourites.length}</div> </button></Link>
                 </div>
             </ul>
         </nav>

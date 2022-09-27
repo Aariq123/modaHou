@@ -8,10 +8,10 @@ import Plans from "./components/plans";
 import Menu from "./components/menu";
 import Start from "./components/start";
 import RecipeInfo from "./components/recipeinfo";
-import FoodArray from "./components/foodArray";
 import AllResults from "./components/allresults";
 import { useContext } from "react";
 import { Context } from "./context/context";
+import Favourites from "./components/favourites";
 
 function App() {
  
@@ -36,6 +36,7 @@ function App() {
           <Route path='/start' element={<Start></Start>}></Route>
           <Route path='/recipe-info' element={<RecipeInfo></RecipeInfo>}></Route>
           <Route path='/all-results' element={<AllResults></AllResults>}></Route>
+          <Route path='/favourites' element={<Favourites></Favourites>}></Route>
         </Routes>
         <Footer></Footer>
       </BrowserRouter>

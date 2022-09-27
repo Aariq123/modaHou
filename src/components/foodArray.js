@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import { Context } from "../context/context";
+import { useContext } from "react";
 
 const FoodArray = ({displayArray}) => {
 
-   
+    const { addToFavourites } = useContext(Context)
     return ( 
         
         displayArray.map(food=>{
@@ -14,11 +16,13 @@ const FoodArray = ({displayArray}) => {
                             <div className="img-div">
                                 <img src={image} alt="" />
                             </div>
-                            <div className="menu-div-heading">
-                                <span className="menu-div-title">{title}</span>
-                                <button className="login-btn">Add to cart</button>
-                            </div>
                         </Link>
+                            <div className="menu-div-heading">
+                            <Link to='/recipe-info' state={{id:id}}>
+                                <span className="menu-div-title">{title}</span>
+                            </Link>
+                                <button onClick={()=> addToFavourites({id, image, title})} className="login-btn">Add to favourites</button>
+                            </div>
                     </div>
             ) 
         }) 

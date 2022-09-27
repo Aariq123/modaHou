@@ -11,7 +11,7 @@ import Pagination from "./pagination";
 
 const Menu = () => {
 
-    const { key1 } = useContext(Context)
+    const { key1, key2 } = useContext(Context)
 
 
     const [ foodArray, setFoodArray ] = useState([])
@@ -82,7 +82,7 @@ const Menu = () => {
         const getRecipes = async (item) => {
             if(item !== ''){
                 setLoading(true)
-                const ligma = await fetch(`https://api.spoonacular.com/recipes/complexSearch?cuisine=${item}&number=100&apiKey=${key1}`)
+                const ligma = await fetch(`https://api.spoonacular.com/recipes/complexSearch?cuisine=${item}&number=100&apiKey=${key2}`)
                 const data = await ligma.json()
                 console.log(data.results)
                 setFoodArray(data.results)
@@ -95,7 +95,7 @@ const Menu = () => {
         useEffect(()=>{
             const searching = async () => {
                 if(search.split('').length > 0){
-                    const ligma = await fetch(`https://api.spoonacular.com/recipes/autocomplete?number=50&query=${search}&apiKey=${key1}`)
+                    const ligma = await fetch(`https://api.spoonacular.com/recipes/autocomplete?number=50&query=${search}&apiKey=${key2}`)
                     const data = await ligma.json()
                     setSearchArray(data)
                     console.log(searchArray)

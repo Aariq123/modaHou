@@ -19,6 +19,11 @@ body{
   margin: auto;
 }
 
+.favourites{
+  min-height: 400px;
+}
+
+
 h1{
   text-align: center;
 }
@@ -69,6 +74,7 @@ nav{
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .login-btn i{
@@ -81,6 +87,19 @@ nav{
 }
 
 
+.login-btn> div{
+  position: absolute;
+  top: -20%;
+  right: -20%;
+  background-color: rgb(12, 122, 12);  
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 
 /*//////// plans ////////*/
@@ -461,6 +480,10 @@ footer .flex, footer .footer2, .footer1, .footer2 div{
   justify-content: space-around;
 }
 
+.category-result h1{
+  margin: 30px;
+}
+
 .menu-div{
   height: 300px;
   overflow: hidden;
@@ -785,6 +808,12 @@ footer .flex, footer .footer2, .footer1, .footer2 div{
   line-height: 30px;
 }
 
+
+/* ////  favourites //////*/
+
+.favourites .login-btn{
+  background-color: rgb(252, 34, 34);
+}
 
 
 
