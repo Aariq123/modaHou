@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 const Favourites = () => {
     const { favourites, deleteFavourites } = useContext(Context);
 
+
     return ( 
         <div className="favourites">
         <div className="container">

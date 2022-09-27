@@ -47,6 +47,11 @@ const ContextProvider = (props) => {
     }
     
     useEffect(()=>{
+
+        
+    const unique = [...new Map(state.favourites.map((m) => [m.id, m])).values()];
+
+    state.favourites = unique
         localStorage.setItem('favourites', JSON.stringify(state.favourites))
     },[state.favourites])
  

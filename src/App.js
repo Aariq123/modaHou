@@ -30,7 +30,7 @@ function App() {
       <HashRouter>
       <Navbar></Navbar>
         <Routes>
-          <Route path='/modaHou' element={<Hero></Hero>}></Route>
+          <Route path='/' element={<Hero></Hero>}></Route>
           <Route path='/menu' element={<Menu></Menu>}></Route>
           <Route path='/plans' element={<Plans></Plans>}></Route>
           <Route path='/start' element={<Start></Start>}></Route>

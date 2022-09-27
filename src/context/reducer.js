@@ -8,7 +8,7 @@ const Reducer = (state, action) => {
     }
 
     if(action.type == 'ADD_TO_FAVOURITES'){
-        return {...state, favourites:[...state.favourites, action.recipe]}
+       return {...state, favourites:[...state.favourites, action.recipe]}
     }
 
     if(action.type == 'DELETE_FAVOURITES'){
