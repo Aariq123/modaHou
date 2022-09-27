@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/modaHou/static/css/main.d7a14b27.css",
-    "main.js": "/modaHou/static/js/main.0ee12407.js",
+    "main.js": "/modaHou/static/js/main.9e797824.js",
     "static/media/hero.jpg": "/modaHou/static/media/hero.d39d51a8196a1d76dd88.jpg",
     "static/media/hero2.jpg": "/modaHou/static/media/hero2.a9e5280ee820e93d87ad.jpg",
     "static/media/plan3.jpg": "/modaHou/static/media/plan3.1f874f2795ad0f4669e7.jpg",
@@ -17,10 +17,10 @@
     "static/media/hehe2.jpg": "/modaHou/static/media/hehe2.4101c5cf2c465322e30a.jpg",
     "index.html": "/modaHou/index.html",
     "main.d7a14b27.css.map": "/modaHou/static/css/main.d7a14b27.css.map",
-    "main.0ee12407.js.map": "/modaHou/static/js/main.0ee12407.js.map"
+    "main.9e797824.js.map": "/modaHou/static/js/main.9e797824.js.map"
   },
   "entrypoints": [
     "static/css/main.d7a14b27.css",
-    "static/js/main.0ee12407.js"
+    "static/js/main.9e797824.js"
   ]
 }
