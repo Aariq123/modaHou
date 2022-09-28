@@ -815,6 +815,18 @@ footer .flex, footer .footer2, .footer1, .footer2 div{
   background-color: rgb(252, 34, 34);
 }
 
+.favourites{
+  text-align: center;
+}
+
+.clear-favourites{
+  background-color: red;
+  padding: 4px;
+  font-size: 18px;
+  color: white;
+  border:none;
+  margin: 20px;
+}
 
 
 @media (max-width:1000px) {

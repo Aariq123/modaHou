@@ -1,5 +1,4 @@
 import { useReducer } from "react";
-import { useState } from "react";
 import { useEffect } from "react";
 import { createContext } from "react";
 import reducer from "./reducer";
@@ -46,18 +45,19 @@ const ContextProvider = (props) => {
         dispatch({type:'DELETE_FAVOURITES', recipe})
     }
     
+    const clearFavourites = () => {
+        dispatch({type:'CLEAR_FAVOURITES'})
+        localStorage.removeItem('favourites');
+    }
+
     useEffect(()=>{
-
-        
-    const unique = [...new Map(state.favourites.map((m) => [m.id, m])).values()];
-
-    state.favourites = unique
         localStorage.setItem('favourites', JSON.stringify(state.favourites))
     },[state.favourites])
  
 
+    console.log(state.favourites)
     return ( 
-        <Context.Provider value={{...state, openNav, closeNav, addToFavourites, deleteFavourites}}>
+        <Context.Provider value={{...state, clearFavourites, openNav, closeNav, addToFavourites, deleteFavourites}}>
             {props.children}
         </Context.Provider>
      );

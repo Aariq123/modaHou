@@ -84,7 +84,6 @@ const Menu = () => {
                 setLoading(true)
                 const ligma = await fetch(`https://api.spoonacular.com/recipes/complexSearch?cuisine=${item}&number=100&apiKey=${key2}`)
                 const data = await ligma.json()
-                console.log(data.results)
                 setFoodArray(data.results)
                 setLoading(false)
                 setFetched(true)

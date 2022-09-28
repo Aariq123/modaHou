@@ -8,7 +8,11 @@ const Reducer = (state, action) => {
     }
 
     if(action.type == 'ADD_TO_FAVOURITES'){
-       return {...state, favourites:[...state.favourites, action.recipe]}
+        state.favourites=[...state.favourites, action.recipe]
+        let unique = [...new Map(state.favourites.map((m) => [m.id, m])).values()];
+    
+
+        return {...state, favourites:unique}
     }
 
     if(action.type == 'DELETE_FAVOURITES'){
@@ -16,6 +20,10 @@ const Reducer = (state, action) => {
         const sugma = ligma.filter(item => item.id !== action.recipe)
 
         return {...state, favourites:sugma}
+    }
+
+    if(action.type == 'CLEAR_FAVOURITES'){
+        return {...state, favourites:[]}
     }
 
 }

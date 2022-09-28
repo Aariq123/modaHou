@@ -18,7 +18,6 @@ const RecipeInfo = () => {
         const getRecipes = async () => {
             const ligma = await fetch(`https://api.spoonacular.com/recipes/${id}/information?includeNutrition=true&apiKey=${key2}`)
             const data = await ligma.json()
-            console.log(data)
             setDescription(data)
         }
         

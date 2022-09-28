@@ -3,7 +3,7 @@ import { Context } from "../context/context";
 import { Link } from "react-router-dom";
 
 const Favourites = () => {
-    const { favourites, deleteFavourites } = useContext(Context);
+    const { favourites, deleteFavourites, clearFavourites } = useContext(Context);
 
 
     return ( 
@@ -36,7 +36,8 @@ const Favourites = () => {
                  })} 
                 </div> 
             }
-            </div>   
+            </div>  
+            {favourites.length > 0 && <button onClick={clearFavourites} className="clear-favourites">CLEAR ALL</button> }
         </div>
         </div>
      );
