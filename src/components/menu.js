@@ -97,7 +97,6 @@ const Menu = () => {
                     const ligma = await fetch(`https://api.spoonacular.com/recipes/autocomplete?number=50&query=${search}&apiKey=${key2}`)
                     const data = await ligma.json()
                     setSearchArray(data)
-                    console.log(searchArray)
                     setDisplaySearchArray(searchArray.slice(0,5))
                     setSearchDivShow(true)
                 } else{

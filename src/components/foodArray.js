@@ -18,7 +18,7 @@ const FoodArray = ({displayArray}) => {
                             </div>
                         </Link>
                             <div className="menu-div-heading">
-                            <Link to='/recipe-info' state={{id:id}}>
+                            <Link to='/recipe-info' state={{id:id, ligma:true}}>
                                 <span className="menu-div-title">{title}</span>
                             </Link>
                                 <button onClick={()=> addToFavourites({id, image, title})} className="login-btn">Add to favourites</button>
